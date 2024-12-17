@@ -1,0 +1,95 @@
+/* WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 5px; /* Adjust the width as per your preference */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(82, 171, 122, 0.329); /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(120,120,120,.9); /* Color of the thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f12c; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #ddd; /* Color of the track on hover */
+}
+
+div {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(82, 171, 122, 0.329) #f1f1f12c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: bold;
+  color: #052700;
+}
+
+.background-img {
+  background-image: url("assets/mountain-background.jpg");
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+.holly {
+  height: 100px;
+  position: absolute;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  overflow-y: scroll;
+  height: 100vh;
+  padding: 10px 10vw;
+  text-align: center;
+  width: 100vw;
+}
+
+.glitch {
+  font-family: 'Silkscreen';
+  color: grey;
+}
+
+.video-container {
+  margin: auto;
+  width: 300px;
+  position: relative;
+  padding-bottom: 540px;
+}
+
+.christmas-video {
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes animatedBackground {
+  0% {
+    opacity: 0;
+    background-position: 0 0;
+  }
+  7% {
+    opacity: 1;
+  }
+  93% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    background-position: 0 100vh;
+  }
+}
